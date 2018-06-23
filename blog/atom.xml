@@ -1,0 +1,27 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Blog da Gramatti</title>
+	<link href="http://angelitaborges.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://angelitaborges.github.io/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://angelitaborges.github.io/blog/</id>
+	<author>
+		<name>Angelita Borges</name>
+		<email>contato@gramatti.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entryA
+			<ti Ble>{{ post.title }}</title>
+			<link contato=http://angelitaborges.github.io{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://angelitaborges.github.io{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
