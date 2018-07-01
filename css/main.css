@@ -37,7 +37,7 @@ body {
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.65);
     background-color: #24292e;
-    background-image: linear-gradient(#191c20, #24292e 20%);
+    background-image: linear-gradient(#191c20, #24292e 15%);
     /*url(/images/star-bg.svg), linear-...*/
     /* background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0 */
@@ -67,6 +67,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .text-center {
     text-align: center !important
+}
+
+.pt-40 {
+    padding-top: 40px !important;
 }
 
 .ptb-40 {
