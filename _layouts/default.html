@@ -27,11 +27,72 @@
 	<meta name="msapplication-TileColor" content="#7030A0">
 	<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#7030A0">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
 	<header>
-		<div class="container ptb-40 plr-14 text-center">
+		<nav class="navbar navbar-main navbar-center navbar-static-top">
+			<h1 id="logo" style="width: 140px; display: inline; float: left; position: relative; margin-left: 10px; margin-left: 10px;">Gramatti
+				<a href="/">
+					<img src="/images/logo.png">
+				</a>
+			</h1>
+
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							{% if page.url == "/" %}
+							<a class="d-inline-block margin-8 current" href="#">Página Inicial</a>
+							{% else %}
+							<a class="d-inline-block margin-8" href="/">Página Inicial</a>
+							{% endif %}
+						</li>
+						<li>
+							{% if page.url == "/serviços/" %}
+							<a class="d-inline-block margin-8 current" href="#">Serviços</a>
+							{% else %}
+							<a class="d-inline-block margin-8" href="/serviços/">Serviços</a>
+							{% endif %}
+						</li>
+						<li>
+							{% if page.url == "/blog/" %}
+							<a class="d-inline-block margin-8 current" href="#">Blog</a>
+							{% else %}
+							<a class="d-inline-block margin-8" href="/blog/">Blog</a>
+							{% endif %}
+						</li>
+						<li>
+							{% if page.url == "/contato/" %}
+							<a class="d-inline-block margin-8 current" href="#">Contato</a>
+							{% else %}
+							<a class="d-inline-block margin-8" href="/contato/">Contato</a>
+							{% endif %}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- <div class="container ptb-40 plr-14 text-center">
 			<a href="/">
 				<img width="96" height="96" alt="Gramatti" src="/images/logo.jpg">
 			</a>
@@ -58,11 +119,11 @@
 					{% endif %}
 				</li>
 			</ul>
-		</div>
+		</div> -->
 	</header>
 
 	<div class="pt-40">
-			{{ content }}
+		{{ content }}
 	</div>
 
 	<footer class="ptb-40 plr-14 text-center">

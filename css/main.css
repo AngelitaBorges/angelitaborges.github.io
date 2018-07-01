@@ -127,3 +127,67 @@ img {
 .current {
     color: #fff
 }
+
+
+
+
+
+
+.hidden {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Nav bar*/
+.navbar-main {
+    background-color: #334b64;
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+    .navbar-main a {
+        color: white;
+    }
+
+    .navbar-main li > a:hover,
+    .navbar-main li > a:focus {
+        background-color: #2e435a;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-main li > a:hover {
+        text-shadow: 0px 1px 1px #293c51, 0px 0px 25px #ffffff;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 0px 25px rgba(255, 255, 255, 0.6);
+    }
+
+.navbar li.active {
+    background-color: #2e435a;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .navbar-center .navbar-nav {
+        display: inline-flex;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar-center .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/*Hamburger button*/
+.navbar-main button:hover {
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-header span {
+    background-color: rgb(255, 255, 255);
+}
+
