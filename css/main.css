@@ -130,6 +130,14 @@ img {
 
 
 
+#logo img {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+}
+
+
 
 
 
