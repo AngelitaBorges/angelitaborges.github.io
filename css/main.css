@@ -202,5 +202,6 @@ img {
 
 hero-img {
     background-color: #7030A0;
-    background-image: url(/images/bg.jpg), #7030A0;
+    background-image: url(/images/bg.jpg), rgba(111, 48, 160, 0.486);
+
 }
